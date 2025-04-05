@@ -79,24 +79,6 @@
             transform: translateY(-2px);
         }
 
-        .article-link {
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        .article-link a {
-            color: #2a2a2a;
-            text-decoration: none;
-            font-weight: 700;
-            border-bottom: 2px solid #FF9900;
-            padding-bottom: 3px;
-            transition: color 0.3s;
-        }
-
-        .article-link a:hover {
-            color: #FF8C00;
-        }
-
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -117,6 +99,48 @@
             margin-bottom: 15px;
         }
 
+        /* NEW GUIDE CARD STYLES */
+        .guide-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px 30px;
+            margin: 30px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            text-align: center;
+            border: 2px solid #28a745;
+        }
+
+        .guide-card h3 {
+            color: #2a2a2a;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .guide-card p {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .guide-button {
+            background: #28a745;
+            color: white !important;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-block;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .guide-button:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -135,6 +159,10 @@
             
             .hero-image {
                 height: 250px;
+            }
+            
+            .guide-card h3 {
+                font-size: 1.4em;
             }
         }
     </style>
@@ -183,13 +211,15 @@
             </a>
         </div>
 
-        <!-- Article Link Section -->
-        <div class="article-link">
-            <p>First time sous vide cooking? Read our complete guide:</p>
-            <a href="https://cookerybomb.com/category/sous-vide-cooking" target="_blank">
-                Master Sous Vide: Techniques, Recipes & Pro Tips
+        <!-- NEW CookeryBomb Guide Card -->
+        <div class="guide-card">
+            <h3>Master Sous Vide Like a Pro</h3>
+            <p>Get expert techniques, time-saving hacks, and chef-approved recipes in our comprehensive guide</p>
+            <a href="https://cookerybomb.com/category/sous-vide-cooking" class="guide-button" target="_blank">
+                Read Full Guide Now →
             </a>
         </div>
+
     </div>
 
     <footer>
